@@ -58,7 +58,7 @@ public class LajiaoEnemy extends BaseEnemy {
     @Override
     public void orderAct(float delta, int counter) {
         if(counter%20==0) {
-            if(getX()>getStopX()) {
+            if(getX()>getStopX() && getX()<(mainGame.getWorldWidth()-280)) {
                 fire();
             }
         }

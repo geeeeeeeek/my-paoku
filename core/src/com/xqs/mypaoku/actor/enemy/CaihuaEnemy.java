@@ -77,7 +77,7 @@ public class CaihuaEnemy extends BaseEnemy {
     @Override
     public void orderAct(float delta, int counter) {
         if(counter%20==0) {
-            if(getX()>getStopX() && getState()==WALK) {
+            if(getX()>getStopX() && getX()<(mainGame.getWorldWidth()-280) && getState()==WALK) {
                 fire();
             }
             // check if enemy was close to tower
